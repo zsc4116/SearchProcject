@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.ikeeko.searchproject.adapter.HomeContentAdapter;
 import com.ikeeko.searchproject.bean.HomeArticleBean;
+import com.ikeeko.searchproject.decoration.HomeArticleDecoration;
 import com.ikeeko.searchproject.net.RetrofitManager;
 
 import java.io.IOException;
@@ -36,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initOther() {
-        RecyclerView.LayoutManager manager = new LinearLayoutManager(this);
         adapter = new HomeContentAdapter();
 
-        rvContent.setLayoutManager(manager);
+        rvContent.setLayoutManager(new LinearLayoutManager(this));
         rvContent.setAdapter(adapter);
+        rvContent.addItemDecoration(new HomeArticleDecoration());
 
     }
 
