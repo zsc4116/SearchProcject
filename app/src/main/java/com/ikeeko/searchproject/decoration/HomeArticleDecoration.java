@@ -40,10 +40,10 @@ public class HomeArticleDecoration extends RecyclerView.ItemDecoration {
             //设置矩形（分割线）的宽度为10px
             final int mDivider = 10;
             //矩形左上顶点
-            final int left = child.getLeft();
+            final int left = child.getLeft() + 40;
             final int top = child.getBottom();
             //矩形的右下角
-            final int right = child.getRight();
+            final int right = child.getRight() - 40;
             final int bottom = top + mDivider;
             c.drawRect(left, top, right, bottom, mPaint);
         }
@@ -62,10 +62,10 @@ public class HomeArticleDecoration extends RecyclerView.ItemDecoration {
             //设置矩形（分割线）的宽度为10px
             final int mDivider = 10;
             //矩形左上顶点
-            final int left = child.getLeft();
+            final int left = child.getLeft() + 40;
             final int top = child.getTop();
             //矩形的右下角
-            final int right = child.getRight();
+            final int right = child.getRight() - 40;
             final int bottom = top + mDivider;
             c.drawRect(left, top, right, bottom, mPaint);
         }

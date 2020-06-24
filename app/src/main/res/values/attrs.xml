@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollParallaxView">
+        <!-- 滚动速率（0~1）值越大滚动视差越明显 -->
+        <attr name="parallaxRate" format="float" />
+        <!-- 滑动是否显示视差，默认 true -->
+        <attr name="enableParallax" format="boolean" />
+        <!-- 圆角宽度，默认 0，若通过修改父类来实现，则不需要设置该值 -->
+        <attr name="roundWidth" format="dimension" />
+        <!-- 是否显示圆形，默认 0，若通过修改父类来实现，则不需要设置该值 -->
+        <attr name="enableCircle" format="boolean" />
+        <!-- 圆角外的颜色，默认 白色，若通过修改父类来实现，则不需要设置该值 -->
+        <attr name="outRoundColor" format="color" />
+    </declare-styleable>
+</resources>

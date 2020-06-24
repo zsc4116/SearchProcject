@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="30dp"
+    android:layout_height="160dp"
     android:orientation="vertical">
+
+    <com.ikeeko.searchproject.view.ScrollParallaxView
+        android:id="@+id/spv_item_home_content_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/yadong"
+        app:outRoundColor="#ffffffff"
+        app:parallaxRate="0.3"
+        app:roundWidth="60px" />
 
     <TextView
         android:id="@+id/tv_item_home_content_title"
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="25dp" />
 
     <TextView
         android:id="@+id/tv_item_home_content_desc"
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="wrap_content" />
 
-</LinearLayout>
+</RelativeLayout>
